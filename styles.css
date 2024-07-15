@@ -40,7 +40,7 @@ body {
     font-size: 20px;
 }
 
-#restart {
+#restart, #singlePlayer, #multiPlayer {
     margin-top: 10px;
     padding: 10px 20px;
     font-size: 16px;
