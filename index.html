@@ -4,17 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>4 in a Row Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Slackey&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="game">
-        <h1>4 in a Row</h1>
-        <button id="singlePlayer">Single Player</button>
-        <button id="multiPlayer">Multiplayer</button>
-        <div id="board"></div>
-        <button id="restart">Restart Game</button>
-        <div id="message"></div>
+    <div class="container">
+        <h1 class="font-1 heading">4 in a Row</h1>
+        <p class="font-2 description">Select game mode and difficulty to start playing!</p>
+        <div id="menu">
+            <button id="singlePlayer" class="font-2">Single Player</button>
+            <button id="multiPlayer" class="font-2">Multiplayer</button>
+        </div>
+        <div id="difficulty" style="display:none;">
+            <button id="easy" class="font-2">Easy</button>
+            <button id="medium" class="font-2">Medium</button>
+            <button id="hard" class="font-2">Hard</button>
+        </div>
+        <div id="board" style="display:none;"></div>
+        <button id="restart" class="font-2" style="display:none;">Restart Game</button>
+        <div id="message" class="font-2"></div>
+        <img src="images/o7.png from hackclub.png" class="game-image">
     </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
